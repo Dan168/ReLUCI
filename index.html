@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ReLUCI - Intelligent Chatbots</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">ReLUCI</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Solutions</a>
+                        <a href="#" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                </div>
+            </nav>
+
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5 align-items-end">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Effortless Customer Support: Empower Your Small Business with Intelligent Chatbots.</h1>
+                            <p class="text-white pb-3 animated slideInDown">Streamline customer interactions, minimise unnecessary inquiries to your service team, and provide swift responses. Our intelligent chatbots allow customers to ask quick questions, ensuring fast and accurate answers. Tailor the chatbot's capabilities to restrict queries, guiding users to efficiently find the information they need.</p>
+                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Learn More</a>
+                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Try it out!</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <h1 class="text-center mb-5">Solutions We Provide</h1>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h5 class="mb-3">Chatbot Design</h5>
+                            <p class="m-0">Elevate user engagement with our expertly crafted chatbot designs, seamlessly blending functionality with a captivating user experience tailored to your brand.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-search text-primary mb-4"></i>
+                            <h5 class="mb-3">Response Research</h5>
+                            <p class="m-0">Stay ahead with our data-driven approach, constantly refining your chatbot's knowledge base to deliver precise and timely responses aligned with user needs and industry trends.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h5 class="mb-3">End-to-End Architecture and Development</h5>
+                            <p class="m-0">Powering seamless interactions, our robust chatbot architecture ensures speed, security, and reliability, enhancing user satisfaction and business efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- Facts Start -->
+        <h1 class="text-center mb-5">The Facts</h1>
+        <div class="container-xxl bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">69</h1>
+                        <p class="text-white mb-0">According to a survey by Salesforce, 69% of consumers prefer using chatbots for quick communication with businesses, highlighting the efficiency of chatbots in providing instant customer support.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">30</h1>
+                        <p class="text-white mb-0">Businesses can achieve cost savings of up to 30% by implementing chatbots for customer service, as reported by IBM. Chatbots can handle a large volume of inquiries simultaneously, reducing the need for a large customer support team.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">91</h1>
+                        <p class="text-white mb-0">Accenture reports that 91% of consumers are more likely to shop with brands that recognize, remember, and provide relevant offers and recommendations. Chatbots play a crucial role in delivering personalized experiences by analyzing user preferences and behavior.s</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">24</h1>
+                        <p class="text-white mb-0">Chatbots provide round-the-clock 24 hour availability, ensuring that businesses can engage with customers and address inquiries at any time, leading to increased customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+        <!-- How It Works Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <h1 class="text-center mb-5">How It Works</h1>
+
+                <!-- How It Works Content Start -->
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-upload text-primary mb-4"></i>
+                            <h5 class="mb-3">1. Consultation and Knowledge</h5>
+                            <p class="m-0">Begin by sending us some common questions your customers have about your business. Send us facts and other information about your business that we can train the bot on.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
+                            <h5 class="mb-3">2. Configure and Tweak Chatbot Parameters</h5>
+                            <p class="m-0">This is where we get to work! We will train and configure your chatbot based of the knowledge you have provided us with.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-comments text-primary mb-4"></i>
+                            <h5 class="mb-3">3. Get Chatting!</h5>
+                            <p class="m-0">Deploy the chatbot on your platform and watch as it engages with users, providing quick and accurate responses to their inquiries 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- How It Works Content End -->
+
+            </div>
+        </div>
+        <!-- How It Works End -->
+
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <h1 class="text-center text-white mb-4">Have an Enquiry?</h1>
+                        <p class="text-white mb-4">Drop us an email <a href="mailto:info@reluci.chat" style="color: inherit;"target="_blank">HERE</a> with general enquiries.</p>
+                        <p class="text-white mb-4">Already doing business with us? Have pricing relates questions? Contact us <a href="mailto:sales@reluci.chat" style="color: inherit;"target="_blank">HERE</a>.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Solihull, United Kingdom</p>
+                        <p><i class="fa fa-envelope me-3"></i> <a href="mailto:info@reluci.chat" style="color: inherit;" target="_blank">info@ReLUCI.com</a></p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">About</a>
+                        <a class="btn btn-link" href="">Solutions</a>
+                        <a class="btn btn-link" href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">ReLUCI</a>, All Right Reserved.
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Solutions</a>
+                                <a href="">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <button id="chat-button">Chat here!</button>
+    </div>
+
+    <div id="chatbot-container" style="display: none;">
+        <div class="wrapper">
+            <div class="close-button" onclick="closeChatbot()">Close</div> <!-- Close button added here -->
+            <div class="title-container">
+                <div class="title">How may I assist you today?</div>
+                <div class="subtitle">You're connected to an AI advisor. <br>Powered by <strong><a href="https://reluci.chat" style="color: inherit;" target="_blank">ReLUCI</a></strong></div>
+            </div>
+            <div id="chatBody" class="box">
+                <div class="message right">
+                    <div class="msg">Hello! Type your query below, and I will do my best to answer.</div>
+                </div>
+            </div>
+
+            <div class="typing-area">
+                <div class="input-field">
+                    <input type="text" id="userInput" placeholder="Type your message" required onkeydown="checkEnter(event)">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const apiKey = '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'; // Replace with your actual OpenAI API key
+
+        document.getElementById('chat-button').addEventListener('click', function () {
+            var chatbotContainer = document.getElementById('chatbot-container');
+            chatbotContainer.style.display = (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') ? 'block' : 'none';
+        });
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            var userInput = document.getElementById('userInput').value;
+            if (userInput.trim() === '') return;
+
+            var chatBody = document.getElementById('chatBody');
+
+            // Show user message
+            var userMessage = document.createElement('div');
+            userMessage.className = 'message';
+            userMessage.innerHTML = '<div class="msg">' + userInput + '</div>';
+            chatBody.appendChild(userMessage);
+
+            // Random responses for variety
+            var randomResponses = ["Having a think...", "One moment please...", "Hold on...", "Let me check... How're you today by the way?", "2 Seconds please..."];
+            var randomResponse = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+
+            // Show random response
+            var loadingMessage = document.createElement('div');
+            loadingMessage.className = 'message right loading';
+            loadingMessage.innerHTML = '<div class="msg">' + randomResponse + '</div>';
+            chatBody.appendChild(loadingMessage);
+
+            // Call the ChatGPT API to get the bot's response
+            var apiEndpoint = 'https://api.openai.com/v1/chat/completions';
+            var messages = [{ 'role': 'system', 'content': 'You are a helpful customer service chatbot assistant. You are a chatbot for a website company called ReLUCI that sells these types of chatbots for small businesses. We tailor chatbots specifically for customer needs. If you aren\'t sure about an answer, offer to draft an email to sales@reluci.chat. You must only answer questions related to this purpose. Politely decline to answer if an unrelated question is asked.' }, { 'role': 'user', 'content': userInput }];
+
+            var headers = {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + apiKey
+            };
+            var data = {
+                model: 'gpt-3.5-turbo',
+                messages: messages,
+                max_tokens: 150 // Adjust as needed
+            };
+
+            try {
+                var response = await fetch(apiEndpoint, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                var responseData = await response.json();
+
+                if (!responseData.choices || responseData.choices.length === 0) {
+                    throw new Error('Empty or undefined choices array in the API response.');
+                }
+
+                // Remove loading message
+                chatBody.removeChild(loadingMessage);
+
+                var botResponse = responseData.choices[0].message.content.trim();
+
+                var botMessage = document.createElement('div');
+                botMessage.className = 'message right';
+                botMessage.innerHTML = '<div class="msg">' + botResponse + '</div>';
+                chatBody.appendChild(botMessage);
+
+                document.getElementById('userInput').value = '';
+                chatBody.scrollTop = chatBody.scrollHeight;
+            } catch (error) {
+                console.error('Error fetching data from ChatGPT API:', error);
+                // Handle error as needed
+                // Remove loading message in case of an error
+                chatBody.removeChild(loadingMessage);
+            }
+        }
+
+        function closeChatbot() {
+            var chatbotContainer = document.getElementById('chatbot-container');
+            chatbotContainer.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
