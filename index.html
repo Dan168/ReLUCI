@@ -290,7 +290,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        const apiKey = process.env.OPENAI_API_KEY; // Replace with your actual OpenAI API key
+        const apiKey = '<%= process.env.OPENAI_API_KEY %>'; // Replace with your actual OpenAI API key
 
         document.getElementById('chat-button').addEventListener('click', function () {
             var chatbotContainer = document.getElementById('chatbot-container');
