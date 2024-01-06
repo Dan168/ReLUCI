@@ -18,11 +18,9 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          # Your deployment commands
           git checkout -b gh-pages
           git rm -rf .
-          cp -r /path/to/your/build/output/* .
-          git add .
+          git checkout main -- .
           git commit -m "Deploy to GitHub Pages"
           git push origin gh-pages
         env:
