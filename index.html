@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8", id="home">
     <title>ReLUCI - Intelligent Chatbots</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -59,9 +59,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">Solutions</a>
-                        <a href="#" class="nav-item nav-link">Contact</a>
+                        <a href="#solutions" class="nav-item nav-link">Solutions</a>
+                        <a href="#enquiry" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="#enquiry" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
                 </div>
@@ -219,10 +218,9 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">Home</a>
-                        <a class="btn btn-link" href="">About</a>
-                        <a class="btn btn-link" href="">Solutions</a>
-                        <a class="btn btn-link" href="">Contact</a>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="#solutions">Solutions</a>
+                        <a class="btn btn-link" href="#enquiry">Contact</a>
                     </div>
                 </div>
             </div>
@@ -237,10 +235,9 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">About</a>
-                                <a href="">Solutions</a>
-                                <a href="">Contact</a>
+                                <a href="index.html">Home</a>
+                                <a href="#solutions">Solutions</a>
+                                <a href="#enquiry">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -316,7 +313,7 @@
             chatBody.appendChild(userMessage);
 
             // Random responses for variety
-            var randomResponses = ["Having a think...", "One moment please...", "Hold on...", "Let me check... How're you today by the way?", "2 Seconds please..."];
+            var randomResponses = ["Processing...", "One moment please...", "Having a think..."];
             var randomResponse = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 
             // Show random response
@@ -329,7 +326,7 @@
             var apiEndpoint = apiUrl;
             var requestData = {
                 user_input: userInput,
-                content: 'You are a helpful customer service chatbot assistant for my business that sells chatbots called ReLUCI. If you are unsure about a question, offer to compose an email and send to info@reluci.chat. if you are asked who owns ReLUCI, it is Dan. his email is dan@reluci.chat. Bearing this in mind, answer the users questions professionally. From now, only answer the users prompts, do not acknowledge to say you understand these instructions.' // Update with your specific content task
+                content: 'You are an assistant for ReLUCI, a company specializing in AI-based chatbots. Only answer questions about ReLUCI and chatbots. If customers ask for contact information, provide the appropriate email addresses: dan@reluci.chat (for Dan, the owner), sales@reluci.chat (for the sales team), info@reluci.chat (for general inquiries). Share that chatbots typically take around a month to develop and train. They can be on a monthly payment model. If the bot is unsure, offer an email address for more information. Keep responses short and concise. Respond to generic phrases (hello, thank you) politely. Feel free to ask about chatbots and ReLUCI.' // Update with your specific content task
             };
 
             try {
