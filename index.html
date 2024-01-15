@@ -290,7 +290,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        const apiKey = '<%= process.env.OPENAI_API_KEY %>'; // Replace with your actual OpenAI API key
+        const apiUrl = 'http://reluci.pythonanywhere.com/'; // Update with your actual API endpoint
 
         document.getElementById('chat-button').addEventListener('click', function () {
             var chatbotContainer = document.getElementById('chatbot-container');
@@ -325,25 +325,20 @@
             loadingMessage.innerHTML = '<div class="msg">' + randomResponse + '</div>';
             chatBody.appendChild(loadingMessage);
 
-            // Call the ChatGPT API to get the bot's response
-            var apiEndpoint = 'https://api.openai.com/v1/chat/completions';
-            var messages = [{ 'role': 'system', 'content': 'You are a helpful customer service chatbot assistant. You are a chatbot for a website company called ReLUCI that sells these types of chatbots for small businesses. We tailor chatbots specifically for customer needs. If you aren\'t sure about an answer, offer to draft an email to sales@reluci.chat. You must only answer questions related to this purpose. Politely decline to answer if an unrelated question is asked.' }, { 'role': 'user', 'content': userInput }];
-
-            var headers = {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + apiKey
-            };
-            var data = {
-                model: 'gpt-3.5-turbo',
-                messages: messages,
-                max_tokens: 150 // Adjust as needed
+            // Call your Flask API to get the bot's response
+            var apiEndpoint = apiUrl;
+            var requestData = {
+                user_input: userInput,
+                content: 'You are a helpful customer service assistant for my business that sells chatbots called ReLUCI. You must only answer questions about ReLUCI and chatbots, and not answer any other unrelated quesitons. if you are unsure about a question, offer to compose an email and send to info@reluci.chat. if you are asked who owns ReLUCI, its Dan. his email is dan@reluci.chat.' // Update with your specific content task
             };
 
             try {
                 var response = await fetch(apiEndpoint, {
                     method: 'POST',
-                    headers: headers,
-                    body: JSON.stringify(data)
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
                 });
 
                 if (!response.ok) {
@@ -352,14 +347,10 @@
 
                 var responseData = await response.json();
 
-                if (!responseData.choices || responseData.choices.length === 0) {
-                    throw new Error('Empty or undefined choices array in the API response.');
-                }
-
                 // Remove loading message
                 chatBody.removeChild(loadingMessage);
 
-                var botResponse = responseData.choices[0].message.content.trim();
+                var botResponse = responseData.trim();
 
                 var botMessage = document.createElement('div');
                 botMessage.className = 'message right';
@@ -369,7 +360,7 @@
                 document.getElementById('userInput').value = '';
                 chatBody.scrollTop = chatBody.scrollHeight;
             } catch (error) {
-                console.error('Error fetching data from ChatGPT API:', error);
+                console.error('Error fetching data from Flask API:', error);
                 // Handle error as needed
                 // Remove loading message in case of an error
                 chatBody.removeChild(loadingMessage);
@@ -381,6 +372,7 @@
             chatbotContainer.style.display = 'none';
         }
     </script>
+
 
 </body>
 
