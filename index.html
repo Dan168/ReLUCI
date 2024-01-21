@@ -316,6 +316,8 @@
             var randomResponses = ["Processing...", "One moment please...", "Having a think..."];
             var randomResponse = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 
+	    document.getElementById('userInput').value = '';
+
             // Show random response
             var loadingMessage = document.createElement('div');
             loadingMessage.className = 'message right loading';
@@ -354,7 +356,6 @@
                 botMessage.innerHTML = '<div class="msg">' + botResponse + '</div>';
                 chatBody.appendChild(botMessage);
 
-                document.getElementById('userInput').value = '';
                 chatBody.scrollTop = chatBody.scrollHeight;
             } catch (error) {
                 console.error('Error fetching data from Flask API:', error);
